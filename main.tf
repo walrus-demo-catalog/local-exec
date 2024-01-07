@@ -1,4 +1,4 @@
-resource "null_resource" "host" {
+resource "null_resource" "local" {
   provisioner "local-exec" {
     command = var.commands
   }

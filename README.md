@@ -16,7 +16,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [null_resource.host](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [null_resource.local](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 
 ## Inputs
 
