@@ -14,7 +14,7 @@ components:
             the desired effect.
           default: |
             echo "Check ping connectivity"
-            ping -t 3 www.baidu.com
+            ping -c 3 -t 5 www.baidu.com
             echo "Check curl connectivity"
             curl https://www.baidu.com
           nullable: true
