@@ -1,0 +1,31 @@
+openapi: 3.0.3
+info:
+  title: OpenAPI schema for template local-exec
+components:
+  schemas:
+    variables:
+      type: object
+      properties:
+        commands:
+          title: Commands
+          type: string
+          description: Command to run in Terraform local execution environment, write
+            commands with repetition in mind, use declarative commands to express
+            the desired effect.
+          default: |
+            echo "Check ping connectivity"
+            ping -t 3 www.baidu.com
+            echo "Check curl connectivity"
+            curl https://www.baidu.com
+          nullable: true
+          x-walrus-ui:
+            order: 1
+            widget: TextArea
+        executed_repeatedly:
+          title: Executed Repeatedly
+          type: boolean
+          description: Allow command to be executed repeatedly.
+          default: false
+          nullable: true
+          x-walrus-ui:
+            order: 2
